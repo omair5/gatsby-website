@@ -1,0 +1,22 @@
+[
+    {
+        "img": "../Assets/Images/bali.jpg",
+        "alt": "bali",
+        "location": "Bali, Indonesia"
+    },
+    {
+        "img": "../Assets/Images/maldive.jpg",
+        "alt": "maldive",
+        "location": "Meeru Island, Maldive"
+    },
+    {
+        "img": "../Assets/Images/srilanka.jpg",
+        "alt": "srilanka",
+        "location": "Kandy, srilanka"
+    },
+    {
+        "img": "../Assets/Images/switzeland.jpg",
+        "alt": "switzerland",
+        "location": "Basel, Switzerland"
+    }
+]

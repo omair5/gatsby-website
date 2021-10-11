@@ -62,7 +62,6 @@ const Bgvideo = styled.video`
 object-fit: cover;
 width: 100vw;
 height: 100vh;
-position: fixed;
 left: 0;
 right: 0;
 top: 0;
