@@ -60,6 +60,7 @@ align-items: center;
 `
 const MainHeading = styled.h1`
 margin: 15px 0px;
+padding-top:15px;
 font-size: clamp(1.5rem,5vw,2rem);
 color:#F26A2E;
 
