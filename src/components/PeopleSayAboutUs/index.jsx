@@ -25,7 +25,7 @@ const PeopleSayAboutUs = () => {
             <MainGrid>
 
                 <GridOne>
-                    <GridContent>
+                    <GridContent data-sal="slide-right" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
                         <Checkmark />
                         <h2>Sarah Kin</h2>
                         <Para>
@@ -34,7 +34,7 @@ const PeopleSayAboutUs = () => {
                             the companies i researched."
                         </Para>
                     </GridContent>
-                    <GridContent>
+                    <GridContent data-sal="slide-right" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
                         <Lightbulb />
                         <h2>Sean Micheals</h2>
                         <Para>
@@ -48,7 +48,14 @@ const PeopleSayAboutUs = () => {
                 <GridTwo>
                     {
                         testimonials.map((value, index) => (
-                            <TestiminialsImage image={getImage(value)} objectFit={'fill'} key={index} alt='testimonials' />
+                            <div key={index} data-sal="zoom-in" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
+                                <TestiminialsImage
+                                    image={getImage(value)}
+                                    objectFit={'fill'}
+                                    alt='testimonials'
+
+                                />
+                            </div>
                         ))
                     }
                 </GridTwo>

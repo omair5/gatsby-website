@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Button from '../Button';
 
 const SignUp = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query ForSignUpSection {
         allFile(filter: {name: {in: "signupbg"}}) {
           nodes {
@@ -16,19 +16,21 @@ const SignUp = () => {
         }
       }
     `)
-    const sigupbg = data.allFile.nodes[0]
-    return (
-        <MainContainer>
-            <SigUpImage image={getImage(sigupbg)} alt='sign' objectFit={'fill'} />
-            <WrapperContainer>
-                <h1>Get Access To Exclusive Offers</h1>
-                <p>Sign Up For Your Newsletter Below To Get $100 Off Your First Trip!</p>
-                <input type="email" placeholder='Enter Your Email' />
-                <Button title='Sign Up Now' />
-                {/* <button type='submit' as='button'>signup</button> */}
-            </WrapperContainer>
-        </MainContainer>
-    );
+  const sigupbg = data.allFile.nodes[0]
+  return (
+    <MainContainer>
+      <SigUpImage image={getImage(sigupbg)} alt='sign' objectFit={'fill'} />
+      <WrapperContainer>
+        <h1 data-sal="slide-down" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">Get Access To Exclusive Offers</h1>
+        <p data-sal="slide-down" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">Sign Up For Your Newsletter Below To Get $100 Off Your First Trip!</p>
+        <input type="email" placeholder='Enter Your Email' data-sal="slide-up" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease" />
+        <div data-sal="slide-up" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease" >
+          <Button title='Sign Up Now' />
+        </div>
+        {/* <button type='submit' as='button'>signup</button> */}
+      </WrapperContainer>
+    </MainContainer>
+  );
 }
 
 export default SignUp;

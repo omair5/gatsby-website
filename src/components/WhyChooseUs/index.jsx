@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
             <MainHeading>WHY CHOOSE US</MainHeading>
             <WrapperContainer>
                 {WhyChooseUsData.map((value, index) => (
-                    <GridItem key={index}>
+                    <GridItem key={index} data-sal="slide-right" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
                         {value.Icon}
                         <Title>{value.title}</Title>
                         <Para>{value.desc}</Para>

@@ -32,7 +32,7 @@ const Trips = () => {
       <WrapperContainer>
         {
           tripsData.map((value) => (
-            <TripCard key={value.id} >
+            <TripCard key={value.id} data-sal="zoom-in" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
               <LocationAndButtonContainer>
                 <Location>
                   <LocationIcon />
