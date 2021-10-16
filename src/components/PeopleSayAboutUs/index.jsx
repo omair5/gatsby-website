@@ -21,7 +21,7 @@ const PeopleSayAboutUs = () => {
     const testimonials = data.allFile.nodes
     return (
         <MainContainer>
-            <MainHeading>WHAT PEOPLE SAY ABOUT</MainHeading>
+            <MainHeading>WHAT PEOPLE SAY ABOUT US</MainHeading>
             <MainGrid>
 
                 <GridOne>
@@ -74,7 +74,6 @@ margin: 15px 0px;
 padding-top:15px;
 font-size: clamp(1.5rem,5vw,2rem);
 color:#F26A2E;
-
 `
 const MainGrid = styled.div`
 display: grid;
@@ -118,6 +117,7 @@ text-align:left
 `
 const Para = styled.p`
 padding-top: 7px;
+color: #999999;
 `
 const Checkmark = styled(IoMdCheckmarkCircleOutline)`
 color:  #ff9cea;

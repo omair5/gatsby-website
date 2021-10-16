@@ -1,5 +1,6 @@
 .navbar {
-    background: transparent;
+    /* background: transparent; */
+    background: #242222;
     height: 80px;
     padding: 0px;
     display: flex;
@@ -82,9 +83,9 @@
     .NavbarItems {
         position: relative;
     }
-    .navbar {
+    /* .navbar {
         background: #242222;
-    }
+    } */
     .nav-menu {
         display: flex;
         flex-direction: column;
