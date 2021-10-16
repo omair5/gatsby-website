@@ -3,7 +3,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from 'gatsby';
 import { NavbarData } from '../../Data/NavbarData';
-import Travel from './travel.png'
 import './Navbar.css';
 import Button from '../Button';
 import styled from 'styled-components';
@@ -17,12 +16,12 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu} >
-                    <Logo src={Travel} alt="LOGO" height={400} width={400} />
+                    <Logo>EXPLORIX</Logo>
                 </Link>
 
                 {/* RESPONSIVE ICONS */}
                 <div className='menu-icon' onClick={handleClick} >
-                    {click ? <FaTimes className={'fa-bars'}/> : <GiHamburgerMenu className={'fa-bars'}/>}
+                    {click ? <FaTimes className={'fa-bars'} /> : <GiHamburgerMenu className={'fa-bars'} />}
                 </div>
 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -46,7 +45,9 @@ function Navbar() {
 }
 export default Navbar;
 
-const Logo=styled.img`
+const Logo = styled.h1`
 position: relative;
-left: -60px;
+left: 30px;
+color:#F26A2E;
+
 `

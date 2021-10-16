@@ -1,10 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import SignUp from "../components/SignUp"
+import WhyChooseUs from "../components/WhyChooseUs"
 
 const Careers = () => {
     return (
         <Layout>
-            this is Careers page
+            <WhyChooseUs />
+            <SignUp />
         </Layout>
     );
 }

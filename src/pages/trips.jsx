@@ -1,10 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Destinations from "../components/Trips"
+
 
 const Trips = () => {
     return (
         <Layout>
-            this is trips page
+            <Destinations />
         </Layout>
     );
 }
