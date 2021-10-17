@@ -25,7 +25,7 @@ const SignUp = () => {
         <p data-sal="slide-down" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">Sign Up For Your Newsletter Below To Get $100 Off Your First Trip!</p>
         <input type="email" placeholder='Enter Your Email' data-sal="slide-up" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease" />
         <div data-sal="slide-up" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease" >
-          <Button title='Sign Up Now' />
+          <Button title='Sign Up Now' linkto='/trips' />
         </div>
         {/* <button type='submit' as='button'>signup</button> */}
       </WrapperContainer>
@@ -36,7 +36,7 @@ const SignUp = () => {
 export default SignUp;
 
 const MainContainer = styled.div`
-min-height: 35vh;
+min-height:45vh;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -44,7 +44,7 @@ justify-content: center;
 align-items: center;
 `
 const SigUpImage = styled(GatsbyImage)`
-height: 100%;
+min-height:45vh;
 width: 100%;
 filter: brightness(40%);
 z-index:2
@@ -54,6 +54,7 @@ z-index:3;
 position: absolute;
 color: white;
 text-align:center;
+padding:10px;
 h1{
     font-size: clamp(1.2rem ,5vw,2.3rem);
     padding: 15px 0px;
