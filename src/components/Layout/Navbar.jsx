@@ -36,7 +36,7 @@ function Navbar() {
                     {/* IF I HAVE TO COMMENT THIS OUT THEN I HAVE TO REMOVE justify-content:end PROPERTY  */}
                     {/* AND TO STYLE THIS BUTTON I HAVE TO REMOVE li */}
                     <li className='forMobileAddButton' >
-                        <Button title='Book A Flight' />
+                        <Button title='Book A Flight' linkto='/trips' />
                     </li>
                 </ul>
             </nav>

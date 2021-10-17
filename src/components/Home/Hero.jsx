@@ -13,12 +13,12 @@ const Hero = () => {
                 </HeroVideo>
 
                 <HeroContent>
-                    <Contenth1 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
+                    <Contenth1 data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease">
                         Unreal Destinations
                     </Contenth1>
-                    <ContentP data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">Making The World Your Playground</ContentP>
+                    <ContentP data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease" >Making The World Your Playground</ContentP>
                     <ContentButton data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease">
-                        <Button title='Travel Now' />
+                        <Button title='Travel Now' linkto='/trips' />
                     </ContentButton>
                 </HeroContent>
 

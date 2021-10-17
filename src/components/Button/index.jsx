@@ -1,9 +1,12 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 
-const Button = ({ title }) => {
+const Button = ({ title, linkto }) => {
   return (
-    <StyledButton  > {title} </StyledButton >
+    <Link to={linkto}>
+      <StyledButton> {title} </StyledButton >
+    </Link>
   );
 }
 

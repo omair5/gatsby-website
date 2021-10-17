@@ -76,6 +76,7 @@ h4{
 p{
 padding:7px 0px;
 cursor: pointer;
+transition: 0.3s ease;
 &:hover{
     font-weight: bolder;
 }

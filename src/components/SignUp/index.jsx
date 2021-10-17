@@ -36,7 +36,7 @@ const SignUp = () => {
 export default SignUp;
 
 const MainContainer = styled.div`
-min-height: 30vh;
+min-height: 35vh;
 position: relative;
 display: flex;
 flex-direction: column;

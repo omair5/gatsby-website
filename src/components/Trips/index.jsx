@@ -32,13 +32,13 @@ const Trips = () => {
       <WrapperContainer>
         {
           tripsData.map((value) => (
-            <TripCard key={value.id} data-sal="zoom-in" data-sal-delay="200" data-sal-duration='2s' data-sal-easing="ease">
+            <TripCard key={value.id} data-sal="zoom-in" data-sal-delay="400" data-sal-duration='7s' data-sal-easing="ease">
               <LocationAndButtonContainer>
                 <Location>
                   <LocationIcon />
                   <h4>{value.location}</h4>
                 </Location>
-                <Button title='View Destination' />
+                <Button title='View Destination' linkto='/trips' />
               </LocationAndButtonContainer>
               <ImageComponent image={getImage(value.img)} alt={value.alt} objectFit={'fill'} />
             </TripCard>
